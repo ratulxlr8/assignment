@@ -58,15 +58,15 @@ function megaFriend(arra)
       }
       else
       {
-    var maxNmae = arra[0].length;
-    var maxIndex = arra[0];
+    var maxName = arra[0].length; // here in maxName lenght of the array is stored 
+    var maxIndex = arra[0]; // let 0th index is the max element 
     for (var i = 1; i < arra.length; i++) {
         var maxNmaeCheck = arra[i].length;
-        if (maxNmaeCheck > maxNmae) {
+        if (maxNmaeCheck > maxName) {
             maxIndex = arra[i];
-            maxNmae = maxNmaeCheck;
+            maxName = maxNmaeCheck;
         }
-    }
+     }
     return maxIndex;
       }
 }
